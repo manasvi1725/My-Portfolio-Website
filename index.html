@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Manasvi Mittal</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Manasvi Mittal</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src=".\assets\my pfp.jpg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Manasvi Mittal</h1>
+        <p class="section__text__p2">Pursuing B.Tech in Computer science and AI</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/manasvi-mittal-62b83528a/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/manasvi1725'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic_container">
+          <img
+            src="./assets/aboutpic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <!-- <h3>Experience</h3> -->
+              <!-- <p>2+ years <br />Frontend Development</p> -->
+            <!-- </div> -->
+            <!-- <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div> --> 
+          <div class="text-container">
+            <p>
+              Hi! I'm a second-year Computer Science and Artificial Intelligence (CSE-AI) student at Indira Gandhi Institute. I'm passionate about deep learning, computer vision, and AI applications in healthcare. Alongside these, I have a strong interest in software development and UI/UX design, aiming to build innovative and user-friendly solutions. My goal is to integrate cutting-edge AI technology with robust software development practices to create impactful tools that solve real-world problems, especially in the healthcare domain.
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="about-section">   
+        <p><b>Here's a glimpse of my skills:</b></p>
+        <div class="skills-container">
+          <!-- Skill 1 -->
+          <div class="skill">
+            <div class="circle" style="--percentage: 70;">
+              <div class="inner-circle">
+                <span class="percentage">70%</span>
+              </div>
+            </div>
+            <div class="skill-name">Python</div>
+          </div>
+    
+          <!-- Skill 2 -->
+          <div class="skill">
+            <div class="circle" style="--percentage: 60;">
+              <div class="inner-circle">
+                <span class="percentage">60%</span>
+              </div>
+            </div>
+            <div class="skill-name">Deep Learning</div>
+          </div>
+    
+          <!-- Skill 3 -->
+          <div class="skill">
+            <div class="circle" style="--percentage: 50;">
+              <div class="inner-circle">
+                <span class="percentage">50%</span>
+              </div>
+            </div>
+            <div class="skill-name">UI/UX Design</div>
+          </div>
+          <div class="skill">
+            <div class="circle" style="--percentage: 80;">
+              <div class="inner-circle">
+                <span class="percentage">80%</span>
+              </div>
+            </div>
+            <div class="skill-name">Java</div>
+          </div>
+          <div class="skill">
+            <div class="circle" style="--percentage: 80;">
+              <div class="inner-circle">
+                <span class="percentage">80%</span>
+              </div>
+            </div>
+            <div class="skill-name">HTML & CSS</div>
+          </div>
+
+        </div>
+      </div>
+
+    
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+            <p><div class="about-containers">
+              <div class="details-container">
+                <h2 class="experience-sub-title">1. internship in CV-DL</h2>
+                <p>
+                I have a two-month hands-on experience in computer vision and deep learning, during which I worked extensively on a project involving the ISIC 2020 dataset. My project focused on detecting skin cancer types, combining both classification and segmentation tasks to deliver precise results. This work culminated in the creation of a research paper, where I documented the methodology and findings of my study. The project gave me valuable experience in medical image analysis, model development, and deploying AI solutions for real-world healthcare challenges.
+                </p>
+                <br>
+              </h1>Skills Acquired:</h1>
+          
+              <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experisence icon"
+                  class="icon"
+                />
+                <div>
+                  <p>Proficient in computer vision frameworks</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experisence icon"
+                  class="icon"
+                />
+                <div>
+                  <p>Advanced in medical image segmentation and classification</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experisence icon"
+                  class="icon"
+                />
+                <div>
+                  <p>Strong analytical and problem-solving abilities</p>
+                </div>
+              </article>
+              
+            </div>
+            <br>
+            <p>"This internship has inspired me to pursue a career in AI-driven healthcare solutions."</p>
+          </div>
+          
+        </div>
+        
+          
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Detection of type of Skin Cancer</h2>
+            <p>Used OpenCv and Deep learning to create a model</p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/manasvi1725/skin-cancer'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">manasvimittal34@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
